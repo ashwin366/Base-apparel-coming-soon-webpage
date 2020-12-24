@@ -55,19 +55,33 @@ body{
 .item1__form{
 	position: relative;
 	display: flex;
-	border: 1px solid hsl(0, 6%, 80%);
-	border-radius: 3rem;
 	overflow: hidden;
 }
 
-input[type="email"]{
+.item1__email-input{
 	height: 3rem;
 	width: 100%;
 	border-radius: 3rem;
-	border: none;
+	border: 1px solid hsl(0, 6%, 80%);
 	outline: none;
 	padding-left: 1.5rem;
 	background: transparent;
+}
+
+.item1__email-input:focus{
+	border: 1px solid #000000;
+}
+
+.input--active{
+	transition: 1s;
+	width: 3rem;
+}
+
+.input--error{
+	border: 2px solid hsl(0, 93%, 68%);
+	background: url("../images/icon-error.svg");
+	background-position: 70% center;
+	background-repeat: no-repeat;
 }
 
 ::placeholder{
@@ -84,20 +98,22 @@ input[type="email"]{
 	border: none;
 	outline: none;
 	background: linear-gradient(135deg, hsl(0, 80%, 86%), 	hsl(0, 74%, 74%));
-	transition: 1s;
+
 }
 
 .btn:focus{
-	border: 2px solid;
+	border: 1px solid;
 }
 
 .btn--active{
-	transform: translateX(-30rem);
+	transform: translateX(-20.2rem);
 	transition: 1s;
 }
 
 .error{
-
+	color: hsl(0, 93%, 68%);
+	font-size: 14px;
+	margin: 5px 0 0 1.5rem;
 }
 
 .error--hidden{
@@ -149,6 +165,10 @@ input[type="email"]{
 
 	.btn{
 		width: 4rem;
+	}
+
+	.btn--active{
+		transform: translateX(-17.4rem);
 	}
 
 	.l-container__item2{
