@@ -175,3 +175,15 @@ body{
 		display: none;
 	}
 }
+
+@media (max-width:375px) {
+	.item1__form{
+		text-align: center;
+		width: 326px;
+	}
+
+	.btn--active{
+		transform: translateX(-16.3rem);
+	}
+
+}
