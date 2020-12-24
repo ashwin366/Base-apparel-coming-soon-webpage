@@ -128,7 +128,7 @@ body{
 
 	.l-container__item1{
 		background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-		padding: 2rem 0;
+		padding: 2rem 0 4rem;
 	}
 
 	.item1__wrapper{
